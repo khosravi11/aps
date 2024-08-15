@@ -1,0 +1,33 @@
+body {  
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-primary, .btn-primary {
+  color: #1966c3 !important;
+}
+
+.bg-primary {
+  background-color: #1966c3 !important;
+}
+
+#logo{
+  width: 300px;
+} 
+
+.hero-section {
+  background: url('./images/banner-image.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.floating-tab {
+  position: fixed;
+  background-color: #1966c3;
+  border-top: black 3px solid;
+  border-right: black 3px solid;
+  border-bottom: black 3px solid;
+  padding: 15px 10px 15px 7.5px;
+  left: 0;
+  top: 75vh; /* 75% of the viewport height from the top */
+}
+
