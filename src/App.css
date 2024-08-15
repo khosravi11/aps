@@ -28,6 +28,6 @@ body {
   border-bottom: black 3px solid;
   padding: 15px 10px 15px 7.5px;
   left: 0;
-  top: 75vh; /* 75% of the viewport height from the top */
+  top: 55vh; /* 75% of the viewport height from the top */
 }
 
