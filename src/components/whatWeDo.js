@@ -74,7 +74,7 @@ const services = [
 
 const ServiceCards = () => {
   return (
-    <section id="services" className="py-5">
+    <section id="WhatWeDo" className="py-5">
       <div className="container">
         <h2 className="text-center mb-5 fs-1 text-primary fw-bold">What We Do</h2>
         <div className="row align-items-stretch justify-content-center">

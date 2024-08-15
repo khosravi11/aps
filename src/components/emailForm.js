@@ -19,7 +19,7 @@ const SendEmail = () => {
   };
 
   return (
-    <div id='register' className="register-container text-white bg-primary py-5">
+    <div id='SendUsAnEmail' className="text-white bg-primary py-5">
         <div className='container'>
           
         <h2 className="text-center text-white fw-bold">Send Us An Email</h2>
