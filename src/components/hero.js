@@ -1,7 +1,7 @@
 import React from 'react';
-import CallNowHero from './callNowButton';
+import ContactButtons from './ContactButtons';
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <div className='container-fluid'>
       <div className="row min-vh-75 align-items-center d-flex align-items-md-stretch">
@@ -9,14 +9,15 @@ const HeroSection = () => {
           <h1 className="display-4 fw-bold text-white p-4">24/7 Plumbing<br />Service</h1>
           <ul className='text-white display-6 ms-5 p-4 mb-4'>
             <li>Industrial, Commercial, Residential</li>
-            <li>Affordable, Flat Rate Pricing</li>
-            <li>No Emergency Service Fees</li>
+            <li>Transparent Pricing, No Surprises</li>
+            <li>Rapid Response, Anytime, Anywhere</li>
+            <li>Fully Bonded and Insured</li>
           </ul>
           <div className='bg-dark p-2 d-flex'>
             <div className='mx-4'>
               <p className='pt-1 text-white fw-bold fs-4 m-0 p-0 text-center'>Contact Us 24/7:</p>
             </div>
-            <CallNowHero direction="horizontal" colorMode="white" />
+            <ContactButtons direction="horizontal" colorMode="white" />
           </div>
         </div>
         <div className="hero-section col-md-4 p-0">
@@ -26,4 +27,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

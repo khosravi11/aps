@@ -24,10 +24,8 @@ body {
   position: fixed;
   background-color: #1966c3;
   border-top: black 3px solid;
-  border-right: black 3px solid;
+  border-left: black 3px solid;
   border-bottom: black 3px solid;
-  padding: 15px 10px 15px 7.5px;
-  left: 0;
-  top: 55vh; /* 75% of the viewport height from the top */
-}
-
+  right: 0;
+  bottom: 0; 
+} 

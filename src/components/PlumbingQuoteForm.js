@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const PlumbingQuoteForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ const PlumbingQuoteForm = () => {
     description: ''
   });
 
+  const [formStatus, setFormStatus] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,16 +23,30 @@ const PlumbingQuoteForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form data submitted:', formData);
+    setFormStatus('Submitting...');
+
+    emailjs.sendForm('service_xz7oude', 'template_l178rz9', e.target, 'ZRnaxOFhnzpDdbvbK')
+      .then((result) => {
+        setFormStatus('Form submitted successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          address: '',
+          serviceType: '',
+          description: ''
+        });
+      }, (error) => {
+        console.error('Error:', error);
+        setFormStatus('An error occurred. Please try again.');
+      });
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Get a Plumbing Quote</h2>
+    <div className='mx-4'>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+          <label htmlFor="name" className="form-label text-white fw-semibold">Name</label>
           <input
             type="text"
             className="form-control"
@@ -41,7 +58,7 @@ const PlumbingQuoteForm = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email</label>
+          <label htmlFor="email" className="form-label text-white fw-semibold">Email</label>
           <input
             type="email"
             className="form-control"
@@ -53,7 +70,7 @@ const PlumbingQuoteForm = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="phone" className="form-label">Phone</label>
+          <label htmlFor="phone" className="form-label text-white fw-semibold">Phone</label>
           <input
             type="tel"
             className="form-control"
@@ -65,7 +82,7 @@ const PlumbingQuoteForm = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="address" className="form-label">Address</label>
+          <label htmlFor="address" className="form-label text-white fw-semibold">Address</label>
           <input
             type="text"
             className="form-control"
@@ -77,7 +94,7 @@ const PlumbingQuoteForm = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="serviceType" className="form-label">Service Type</label>
+          <label htmlFor="serviceType" className="form-label text-white fw-semibold">Service Type</label>
           <select
             className="form-select"
             id="serviceType"
@@ -94,7 +111,7 @@ const PlumbingQuoteForm = () => {
           </select>
         </div>
         <div className="mb-3">
-          <label htmlFor="description" className="form-label">Description</label>
+          <label htmlFor="description" className="form-label text-white fw-semibold">Description</label>
           <textarea
             className="form-control"
             id="description"
@@ -105,7 +122,8 @@ const PlumbingQuoteForm = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary bg-white text-primary fw-semibold">Submit</button>
+        {formStatus && <p className="mt-3">{formStatus}</p>}
       </form>
     </div>
   );
