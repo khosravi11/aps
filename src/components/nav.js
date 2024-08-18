@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactButtons from './ContactButtons';
+import ContactButtons from './ContactButtons'; 
 
 const Nav = () => {
   return (
