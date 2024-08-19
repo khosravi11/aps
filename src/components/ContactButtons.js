@@ -30,7 +30,7 @@ const ContactButtons = ({ direction = 'horizontal', colorMode = 'white' }) => {
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
       >
         <FontAwesomeIcon icon={faFacebookMessenger} size="2xl" />
-      </a> */}
+      </a> */} 
       <a 
         href="tel:415-827-5709" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}

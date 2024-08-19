@@ -23,24 +23,38 @@ const PlumbingQuoteForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormStatus('Submitting...');
-
+  
+    // Send to the first template
     emailjs.sendForm('service_xz7oude', 'template_l178rz9', e.target, 'ZRnaxOFhnzpDdbvbK')
       .then((result) => {
-        setFormStatus('Form submitted successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          address: '',
-          serviceType: '',
-          description: ''
-        });
+        console.log('First template sent:', result.text);
+  
+        // Send to the second template
+        emailjs.sendForm('service_xz7oude', 'template_rqe644a', e.target, 'ZRnaxOFhnzpDdbvbK')
+          .then((result) => {
+            console.log('Second template sent:', result.text);
+            setFormStatus('Form submitted successfully!');
+            
+            // Clear form fields
+            setFormData({
+              name: '',
+              email: '',
+              phone: '',
+              address: '',
+              serviceType: '',
+              description: ''
+            });
+          }, (error) => {
+            console.error('Error with second template:', error);
+            setFormStatus('An error occurred with the second submission. Please try again.');
+          });
+  
       }, (error) => {
-        console.error('Error:', error);
-        setFormStatus('An error occurred. Please try again.');
+        console.error('Error with first template:', error);
+        setFormStatus('An error occurred with the first submission. Please try again.');
       });
   };
+  
 
   return (
     <div className='mx-4'>
