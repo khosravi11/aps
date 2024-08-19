@@ -23,14 +23,14 @@ const ContactButtons = ({ direction = 'horizontal', colorMode = 'white' }) => {
       >
         <FontAwesomeIcon icon={faSms} size="2xl" />
       </a>
-      <a 
+      {/* <a 
         href="https://m.me/allplumbingsystems" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
       >
         <FontAwesomeIcon icon={faFacebookMessenger} size="2xl" />
-      </a>
+      </a> */}
       <a 
         href="tel:415-827-5709" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
