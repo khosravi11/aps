@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#home" className="text-white">Home</a></li>
+              <li><a href="#top" className="text-white">Home</a></li>
               <li><a href="#WhatWeDo" className="text-white">What We Do</a></li>
               <li><a href="#SendUsAnEmail" className="text-white">Send Us An Email</a></li>
             </ul>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="row mt-3">
           <div className="col text-center">
-            <p>&copy; 2024 Plumbing Company. All Rights Reserved.</p>
+            <p>&copy; 2024 All Plumbing Systems LLC. All Rights Reserved.</p>
           </div>
         </div>
       </div>

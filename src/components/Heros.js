@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="display-4 fw-bold text-white p-4">24/7 Plumbing<br />Service</h1>
           <ul className='text-white display-6 ms-5 p-4 mb-4'>
             <li>Industrial, Commercial, Residential</li>
-            <li>Transparent Pricing, No Surprises</li>
+            <li>Compentative Pricing, No Surprises</li>
             <li>Rapid Response, Anytime, Anywhere</li>
             <li>Fully Bonded and Insured</li>
           </ul>
@@ -17,7 +17,9 @@ const Hero = () => {
             <div className='mx-4'>
               <p className='pt-1 text-white fw-bold fs-4 m-0 p-0 text-center'>Contact Us 24/7:</p>
             </div>
-            <ContactButtons direction="horizontal" colorMode="white" />
+            <div className='d-flex align-items-center'>
+              <ContactButtons direction="horizontal" colorMode="white" />
+            </div>
           </div>
         </div>
         <div className="hero-section col-md-4 p-0">

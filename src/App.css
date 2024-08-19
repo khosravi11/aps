@@ -22,10 +22,6 @@ body {
 
 .floating-tab {
   position: fixed;
-  background-color: #1966c3;
-  border-top: black 3px solid;
-  border-left: black 3px solid;
-  border-bottom: black 3px solid;
   right: 0;
   bottom: 0; 
 } 

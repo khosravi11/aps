@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopBanner = () => {
   return (
-    <div className='container py-2'>
+    <div id="#top" className='container py-2'>
       <div className='row'>
         <div className='col-md-4 d-flex justify-content-md-start justify-content-center'>
           <a href="#home">
