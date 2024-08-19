@@ -10,7 +10,7 @@ const ContactButtons = ({ direction = 'horizontal', colorMode = 'white' }) => {
   return (
     <div className={`${isVertical ? 'btn-group-vertical' : 'btn-group'}`}>
       <a 
-        href="https://wa.me/415-872-5709" 
+        href="https://wa.me/4158275709" 
         target="_blank" 
         rel="noopener noreferrer" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
@@ -18,7 +18,7 @@ const ContactButtons = ({ direction = 'horizontal', colorMode = 'white' }) => {
         <FontAwesomeIcon icon={faWhatsapp} size="2xl" />
       </a>
       <a 
-        href="sms:415-872-5709" 
+        href="sms:415-827-5709" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
       >
         <FontAwesomeIcon icon={faSms} size="2xl" />
@@ -32,7 +32,7 @@ const ContactButtons = ({ direction = 'horizontal', colorMode = 'white' }) => {
         <FontAwesomeIcon icon={faFacebookMessenger} size="2xl" />
       </a>
       <a 
-        href="tel:415-872-5709" 
+        href="tel:415-827-5709" 
         className={`btn ${isPrimaryMode ? 'bg-primary text-white' : 'bg-white text-primary'}`}
       >
         <FontAwesomeIcon icon={faPhone} size="2xl" />
