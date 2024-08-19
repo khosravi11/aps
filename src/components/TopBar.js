@@ -11,8 +11,7 @@ const TopBanner = () => {
         </div>
         <div className='col-md-4 d-flex justify-content-center d-lg-block d-none'>
           <p className='pt-3 text-primary fw-bold h4 ms-3'>
-            Serving Bay Area<br /><br />
-            EMERGENCY SERVICE<br />
+            Proudly Serving the<br/>Greater Bay Area<br />
             24 hours a day, 7 days a week
           </p>
         </div>

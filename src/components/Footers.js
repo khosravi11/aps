@@ -15,21 +15,15 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li><a href="#home" className="text-white">Home</a></li>
-              <li><a href="#about" className="text-white">About</a></li>
-              <li><a href="#services" className="text-white">Services</a></li>
-              <li><a href="#contact" className="text-white">Contact</a></li>
+              <li><a href="#WhatWeDo" className="text-white">What We Do</a></li>
+              <li><a href="#SendUsAnEmail" className="text-white">Send Us An Email</a></li>
             </ul>
           </div>
           <div className="col-md-4">
             <h5>Contact Us</h5>
             <p>
-              <strong>Phone:</strong> (123) 456-7890<br />
-              <strong>Email:</strong> info@plumbing.com
-            </p>
-            <p>
-              <strong>Address:</strong><br />
-              123 Plumbing St.,<br />
-              Pipe City, PC 12345
+              <strong>Phone:</strong> <a className='text-white' href='tel:4158275709'>(415) 827-5709</a><br />
+              <strong>Email:</strong> <a className='text-white' href='mailto:filhernandez@allplumbingservices.org'>filhernandez@allplumbingservices.org</a>
             </p>
           </div>
         </div>
