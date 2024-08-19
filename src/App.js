@@ -2,13 +2,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import Hero from './components/Heros';
+import Footer from './components/Footers';
 import ServiceCards from './components/ServiceCards';
-import TopBanner from './components/TopBanner';
+import TopBanner from './components/TopBar';
 import FloatingTab from './components/FloatingTab';
 import PlumbingQuoteForm from './components/PlumbingQuoteForm';
-import Nav from './components/Nav.js';
+import Nav from './components/NavBar';
 
 function App() {
   return (
