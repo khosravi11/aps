@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-import Nav from './components/Nav';
+import Nav from './components/Nav.js';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import ServiceCards from './components/ServiceCards';
