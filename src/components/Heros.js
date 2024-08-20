@@ -8,10 +8,10 @@ const Hero = () => {
         <div className="col-md-8 p-0 bg-primary text-center text-md-start">
           <h1 className="display-4 fw-bold text-white p-4">24/7 Plumbing<br />Service</h1>
           <ul className='text-white display-6 ms-5 p-4 mb-4'>
-            <li>Industrial, Commercial, Residential</li>
-            <li>Compentative Pricing, No Surprises</li>
-            <li>Rapid Response, Anytime, Anywhere</li>
-            <li>Fully Bonded and Insured</li>
+            <li className='mb-3'>Your One-Stop-Shop Solution for Industrial, Commercial, Residential Needs</li>
+            <li className='my-3'>Compentative Pricing with No Surprises</li>
+            <li className='my-3'>Rapid Response, Anytime, Anywhere</li>
+            <li className='my-3'>Fully Bonded and Insured For Your Peace of Mind</li>
           </ul>
           <div className='bg-dark p-2 d-flex'>
             <div className='mx-4'>
