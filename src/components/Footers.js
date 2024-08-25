@@ -23,7 +23,7 @@ const Footer = () => {
             <h5>Contact Us</h5>
             <p>
               <strong>Phone:</strong> <a className='text-white' href='tel:4158275709'>(415) 827-5709</a><br />
-              <strong>Email:</strong> <a className='text-white' href='mailto:filhernandez@allplumbingservices.org'>filhernandez@allplumbingservices.org</a>
+              <strong>Email:</strong> <a className='text-white' href='mailto:filhernandez@allplumbingsystems.org'>filhernandez@allplumbingsystems.org</a>
             </p>
           </div>
         </div>
