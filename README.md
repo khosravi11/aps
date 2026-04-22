@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# All Plumbing Systems Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What This Project Is
+
+Custom React website for All Plumbing Systems, a Bay Area plumbing business. The site provides a professional public web presence with clear service messaging, mobile-friendly contact options, and a lightweight quote request workflow. It was intentionally built as a frontend-only site so the business can maintain a polished online presence without backend infrastructure or ongoing server overhead.
+
+## Live Site
+
+https://allplumbingsystems.org/
+
+## Features
+
+- Responsive single-page marketing website for a real plumbing business
+- Hero section with 24/7 service messaging and clear calls to action
+- Service overview section covering core plumbing offerings
+- Mobile-friendly contact actions for phone, SMS, and WhatsApp
+- Quote request form powered by EmailJS without a custom backend
+- Business branding, contact details, and footer navigation
+
+## Tech Stack
+
+- React 18
+- Create React App
+- Bootstrap 5
+- Font Awesome
+- EmailJS
+- Jest and React Testing Library
+
+## Screenshots
+
+Screenshots can be added here as the repo is polished further:
+
+- `docs/screenshots/homepage.png`
+- `docs/screenshots/services.png`
+- `docs/screenshots/contact-form.png`
+
+The live site above is currently the best way to review the project.
+
+## Setup
+
+```bash
+npm install
+npm start
+```
+
+The app runs locally at `http://localhost:3000`.
+
+## Environment Variables
+
+Create a local `.env` file in the project root using `.env.example` as the template:
+
+```bash
+REACT_APP_EMAILJS_SERVICE_ID=your_emailjs_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID_CUSTOMER=your_customer_template_id
+REACT_APP_EMAILJS_TEMPLATE_ID_INTERNAL=your_internal_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+```
+
+Do not commit your real `.env` file. Because this is a frontend-only React app, these values are configuration rather than true secrets and will still be exposed to the client at runtime.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` runs the development server
+- `npm test` runs the test suite
+- `npm run build` creates a production build
 
-### `npm start`
+## Author
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by [Saam Khosravi](https://github.com/khosravi11).

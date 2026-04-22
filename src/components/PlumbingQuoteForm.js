@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID_CUSTOMER = process.env.REACT_APP_EMAILJS_TEMPLATE_ID_CUSTOMER;
+const EMAILJS_TEMPLATE_ID_INTERNAL = process.env.REACT_APP_EMAILJS_TEMPLATE_ID_INTERNAL;
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
 const PlumbingQuoteForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -23,14 +28,34 @@ const PlumbingQuoteForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (
+      !EMAILJS_SERVICE_ID ||
+      !EMAILJS_TEMPLATE_ID_CUSTOMER ||
+      !EMAILJS_TEMPLATE_ID_INTERNAL ||
+      !EMAILJS_PUBLIC_KEY
+    ) {
+      setFormStatus('Form is temporarily unavailable. Please contact us by phone.');
+      return;
+    }
   
     // Send to the first template
-    emailjs.sendForm('service_xz7oude', 'template_l178rz9', e.target, 'ZRnaxOFhnzpDdbvbK')
+    emailjs.sendForm(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID_CUSTOMER,
+      e.target,
+      EMAILJS_PUBLIC_KEY
+    )
       .then((result) => {
         console.log('First template sent:', result.text);
   
         // Send to the second template
-        emailjs.sendForm('service_xz7oude', 'template_rqe644a', e.target, 'ZRnaxOFhnzpDdbvbK')
+        emailjs.sendForm(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID_INTERNAL,
+          e.target,
+          EMAILJS_PUBLIC_KEY
+        )
           .then((result) => {
             console.log('Second template sent:', result.text);
             setFormStatus('Form submitted successfully!');
